@@ -8,6 +8,6 @@
             This is test if ansible
              {% if ansible_hostname == "ANSIBLEWINSRV" -%}
                    This is ansiblewinserver
-             {% elif ansible_hostname == "UBUNTU" -%}
+             {% elif ansible_hostname == "ubuntu" -%}
                     This is ubuntu server
              {% endif %}
