@@ -1,0 +1,13 @@
+---
+-
+  hosts: win1 lin1
+  tasks:
+    - name: test Jinja if
+      debug:
+        msg: >
+            This is test if ansible
+             {% for ipv4 in ansible_all_ipv4_addresses -%}
+                   IP Address entry {{ loop.index }} = {{ ipv4 }}
+             {% endfor -%}
+
+# you can also use {% if ansible_hostname is defined -%}
