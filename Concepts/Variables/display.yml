@@ -5,10 +5,15 @@
 
   vars:
     myname: "Dinesh Patil"
+     company: "Generalmills"
+       location: powai 
   
   tasks:
     - name: Display Variable name
       debug:
-        msg: "{{myname}}"
+        msg: >
+              my name is  "{{myname}}"
+              my company is "{{myname.company}}"
+              my company location is "{{myname.company.location}}"
 
 ...
