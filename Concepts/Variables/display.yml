@@ -1,0 +1,14 @@
+---
+-
+  hosts: win1 lin1
+  gather_facts: false # this will make not to gather facts before running tasks
+
+  vars:
+    myname: "Dinesh Patil"
+  
+  tasks:
+    - name: Display Variable name
+      debug:
+        msg: "{{myname}}"
+
+...
