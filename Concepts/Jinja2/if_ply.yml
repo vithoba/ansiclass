@@ -6,6 +6,8 @@
       debug:
         msg: >
             This is test if ansible
-             {% if ansible_hostname == "ansiblewinsrv" -%}
+             {% if ansible_hostname == "ANSIBLEWINSRV" -%}
                    This is ansiblewinserver
+             {% elif ansible_hostname == "UBUNTU" -%}
+                    This is ubuntu server
              {% endif %}
