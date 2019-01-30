@@ -5,15 +5,16 @@
 
   vars:
     myname: "Dinesh Patil"
-     company: "Generalmills"
-       location: powai 
+    company: 
+       name: "Generalmills"
+       location: "powai" 
   
   tasks:
     - name: Display Variable name
       debug:
         msg: >
               my name is  "{{myname}}"
-              my company is "{{myname.company}}"
-              my company location is "{{myname.company.location}}"
+              my company is "{{company}}"
+              my company location is "{{company.location}}"
 
 ...
