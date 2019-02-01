@@ -902,3 +902,192 @@ The offending line appears to be:
     }, 
     "changed": false
 }
+2019-01-31 22:52:44,750 p=2435 u=root |  PLAY [win1 lin1] *******************************************************************************************************************************************************
+2019-01-31 22:52:44,778 p=2435 u=root |  TASK [Gathering Facts] *************************************************************************************************************************************************
+2019-01-31 22:52:48,062 p=2435 u=root |  ok: [ubuntu]
+2019-01-31 22:52:48,111 p=2435 u=root |  TASK [Display Variable name] *******************************************************************************************************************************************
+2019-01-31 22:52:48,220 p=2435 u=root |  ok: [ubuntu] => {
+    "msg": "my name is  \"Dinesh Patil\" my company is \"{u'name': u'Generalmills', u'location': u'powai'}\" my company location is \"powai\"\n"
+}
+2019-01-31 22:52:48,270 p=2435 u=root |  TASK [display list items] **********************************************************************************************************************************************
+2019-01-31 22:52:48,382 p=2435 u=root |  ok: [ubuntu] => {
+    "msg": "our list is [{u'Dharmalingam Konar': {u'company': u'netmagic'}}, {u'Basantkumar Nayak': {u'company': u'capgemini'}}, {u'Prashant': {u'company': u'tcs'}}] first item in the list is {u'Dharmalingam Konar': {u'company': u'netmagic'}}\n"
+}
+2019-01-31 22:52:48,430 p=2435 u=root |  TASK [display array items] *********************************************************************************************************************************************
+2019-01-31 22:52:48,536 p=2435 u=root |  ok: [ubuntu] => {
+    "msg": "our features list is [u'Web-Server', u'Telnet-Client', u'Windows-Server-Backup'] first item in the features list is Web-Server\n"
+}
+2019-01-31 22:52:48,585 p=2435 u=root |  TASK [display variables from external files] ***************************************************************************************************************************
+2019-01-31 22:52:48,695 p=2435 u=root |  ok: [ubuntu] => {
+    "msg": "our  input from the external files -- myname is Dinesh Patil first item in the features list is [u'Bits', u'Dhcp', u'Dnscache']\n"
+}
+2019-01-31 22:52:48,747 p=2435 u=root |  TASK [take input from user] ********************************************************************************************************************************************
+2019-01-31 22:52:48,858 p=2435 u=root |  ok: [ubuntu] => {
+    "msg": "the input provided by you is WIN\n"
+}
+2019-01-31 22:52:48,906 p=2435 u=root |  TASK [get the variables from fact] *************************************************************************************************************************************
+2019-01-31 22:52:49,097 p=2435 u=root |  ok: [ubuntu] => {
+    "msg": "The port used for the Debian\n # you can use below msg if any of the value not found or not assigned\n # The port used for the 5985\n \n"
+}
+2019-01-31 22:52:49,102 p=2435 u=root |  PLAY RECAP *************************************************************************************************************************************************************
+2019-01-31 22:52:49,102 p=2435 u=root |  ubuntu                     : ok=7    changed=0    unreachable=0    failed=0   
+2019-01-31 22:56:22,323 p=2544 u=root |  PLAY [win1 lin1] *******************************************************************************************************************************************************
+2019-01-31 22:56:22,339 p=2544 u=root |  TASK [Gathering Facts] *************************************************************************************************************************************************
+2019-01-31 22:56:22,430 urllib3.connectionpool Starting new HTTPS connection (1): ansiblewinsrv:5986
+2019-01-31 22:56:22,444 urllib3.connectionpool https://ansiblewinsrv:5986 "POST /wsman HTTP/1.1" 401 0
+2019-01-31 22:56:22,448 urllib3.connectionpool Resetting dropped connection: ansiblewinsrv
+2019-01-31 22:56:22,459 urllib3.connectionpool https://ansiblewinsrv:5986 "POST /wsman HTTP/1.1" 401 0
+2019-01-31 22:56:22,565 urllib3.connectionpool https://ansiblewinsrv:5986 "POST /wsman HTTP/1.1" 200 1636
+2019-01-31 22:56:22,579 urllib3.connectionpool https://ansiblewinsrv:5986 "POST /wsman HTTP/1.1" 200 847
+2019-01-31 22:56:23,153 urllib3.connectionpool https://ansiblewinsrv:5986 "POST /wsman HTTP/1.1" 200 753
+2019-01-31 22:56:23,872 urllib3.connectionpool https://ansiblewinsrv:5986 "POST /wsman HTTP/1.1" 200 998
+2019-01-31 22:56:28,816 urllib3.connectionpool https://ansiblewinsrv:5986 "POST /wsman HTTP/1.1" 200 7459
+2019-01-31 22:56:28,823 urllib3.connectionpool https://ansiblewinsrv:5986 "POST /wsman HTTP/1.1" 200 757
+2019-01-31 22:56:28,838 urllib3.connectionpool https://ansiblewinsrv:5986 "POST /wsman HTTP/1.1" 200 602
+2019-01-31 22:56:28,852 p=2544 u=root |  ok: [ansiblewinsrv]
+2019-01-31 22:56:28,869 p=2544 u=root |  TASK [Display Variable name] *******************************************************************************************************************************************
+2019-01-31 22:56:28,954 p=2544 u=root |  ok: [ansiblewinsrv] => {
+    "msg": "my name is  \"Dinesh Patil\" my company is \"{u'name': u'Generalmills', u'location': u'powai'}\" my company location is \"powai\"\n"
+}
+2019-01-31 22:56:28,968 p=2544 u=root |  TASK [display list items] **********************************************************************************************************************************************
+2019-01-31 22:56:29,050 p=2544 u=root |  ok: [ansiblewinsrv] => {
+    "msg": "our list is [{u'Dharmalingam Konar': {u'company': u'netmagic'}}, {u'Basantkumar Nayak': {u'company': u'capgemini'}}, {u'Prashant': {u'company': u'tcs'}}] first item in the list is {u'Dharmalingam Konar': {u'company': u'netmagic'}}\n"
+}
+2019-01-31 22:56:29,066 p=2544 u=root |  TASK [display array items] *********************************************************************************************************************************************
+2019-01-31 22:56:29,150 p=2544 u=root |  ok: [ansiblewinsrv] => {
+    "msg": "our features list is [u'Web-Server', u'Telnet-Client', u'Windows-Server-Backup'] first item in the features list is Web-Server\n"
+}
+2019-01-31 22:56:29,165 p=2544 u=root |  TASK [display variables from external files] ***************************************************************************************************************************
+2019-01-31 22:56:29,252 p=2544 u=root |  ok: [ansiblewinsrv] => {
+    "msg": "our  input from the external files -- myname is Dinesh Patil first item in the features list is [u'Bits', u'Dhcp', u'Dnscache']\n"
+}
+2019-01-31 22:56:29,278 p=2544 u=root |  TASK [take input from user] ********************************************************************************************************************************************
+2019-01-31 22:56:29,359 p=2544 u=root |  ok: [ansiblewinsrv] => {
+    "msg": "the input provided by you is WIN\n"
+}
+2019-01-31 22:56:29,375 p=2544 u=root |  TASK [get the variables from fact] *************************************************************************************************************************************
+2019-01-31 22:56:29,409 p=2544 u=root |  fatal: [ansiblewinsrv]: FAILED! => {"msg": "The task includes an option with an undefined variable. The error was: u\"hostvars['ANSIBLEWINSRV']\" is undefined\n\nThe error appears to have been in '/home/dinesh/ansiclass/Concepts/Variables/display.yml': line 61, column 7, but may\nbe elsewhere in the file depending on the exact syntax problem.\n\nThe offending line appears to be:\n\n\n    - name: get the variables from fact\n      ^ here\n"}
+2019-01-31 22:56:29,413 p=2544 u=root |  	to retry, use: --limit @/home/dinesh/ansiclass/Concepts/Variables/display.retry
+
+2019-01-31 22:56:29,414 p=2544 u=root |  PLAY RECAP *************************************************************************************************************************************************************
+2019-01-31 22:56:29,414 p=2544 u=root |  ansiblewinsrv              : ok=6    changed=0    unreachable=0    failed=1   
+2019-01-31 22:57:14,822 p=2567 u=root |  PLAY [win1 lin1] *******************************************************************************************************************************************************
+2019-01-31 22:57:14,839 p=2567 u=root |  TASK [Gathering Facts] *************************************************************************************************************************************************
+2019-01-31 22:57:14,940 urllib3.connectionpool Starting new HTTPS connection (1): ansiblewinsrv:5986
+2019-01-31 22:57:14,952 urllib3.connectionpool https://ansiblewinsrv:5986 "POST /wsman HTTP/1.1" 401 0
+2019-01-31 22:57:14,955 urllib3.connectionpool Resetting dropped connection: ansiblewinsrv
+2019-01-31 22:57:14,966 urllib3.connectionpool https://ansiblewinsrv:5986 "POST /wsman HTTP/1.1" 401 0
+2019-01-31 22:57:15,062 urllib3.connectionpool https://ansiblewinsrv:5986 "POST /wsman HTTP/1.1" 200 1636
+2019-01-31 22:57:15,077 urllib3.connectionpool https://ansiblewinsrv:5986 "POST /wsman HTTP/1.1" 200 847
+2019-01-31 22:57:15,645 urllib3.connectionpool https://ansiblewinsrv:5986 "POST /wsman HTTP/1.1" 200 753
+2019-01-31 22:57:16,350 urllib3.connectionpool https://ansiblewinsrv:5986 "POST /wsman HTTP/1.1" 200 998
+2019-01-31 22:57:20,869 urllib3.connectionpool https://ansiblewinsrv:5986 "POST /wsman HTTP/1.1" 200 7459
+2019-01-31 22:57:20,876 urllib3.connectionpool https://ansiblewinsrv:5986 "POST /wsman HTTP/1.1" 200 757
+2019-01-31 22:57:20,892 urllib3.connectionpool https://ansiblewinsrv:5986 "POST /wsman HTTP/1.1" 200 602
+2019-01-31 22:57:20,910 p=2567 u=root |  ok: [ansiblewinsrv]
+2019-01-31 22:57:20,928 p=2567 u=root |  TASK [Display Variable name] *******************************************************************************************************************************************
+2019-01-31 22:57:21,019 p=2567 u=root |  ok: [ansiblewinsrv] => {
+    "msg": "my name is  \"Dinesh Patil\" my company is \"{u'name': u'Generalmills', u'location': u'powai'}\" my company location is \"powai\"\n"
+}
+2019-01-31 22:57:21,035 p=2567 u=root |  TASK [display list items] **********************************************************************************************************************************************
+2019-01-31 22:57:21,120 p=2567 u=root |  ok: [ansiblewinsrv] => {
+    "msg": "our list is [{u'Dharmalingam Konar': {u'company': u'netmagic'}}, {u'Basantkumar Nayak': {u'company': u'capgemini'}}, {u'Prashant': {u'company': u'tcs'}}] first item in the list is {u'Dharmalingam Konar': {u'company': u'netmagic'}}\n"
+}
+2019-01-31 22:57:21,136 p=2567 u=root |  TASK [display array items] *********************************************************************************************************************************************
+2019-01-31 22:57:21,218 p=2567 u=root |  ok: [ansiblewinsrv] => {
+    "msg": "our features list is [u'Web-Server', u'Telnet-Client', u'Windows-Server-Backup'] first item in the features list is Web-Server\n"
+}
+2019-01-31 22:57:21,233 p=2567 u=root |  TASK [display variables from external files] ***************************************************************************************************************************
+2019-01-31 22:57:21,314 p=2567 u=root |  ok: [ansiblewinsrv] => {
+    "msg": "our  input from the external files -- myname is Dinesh Patil first item in the features list is [u'Bits', u'Dhcp', u'Dnscache']\n"
+}
+2019-01-31 22:57:21,328 p=2567 u=root |  TASK [take input from user] ********************************************************************************************************************************************
+2019-01-31 22:57:21,411 p=2567 u=root |  ok: [ansiblewinsrv] => {
+    "msg": "the input provided by you is s\n"
+}
+2019-01-31 22:57:21,427 p=2567 u=root |  TASK [get the variables from fact] *************************************************************************************************************************************
+2019-01-31 22:57:21,465 p=2567 u=root |  fatal: [ansiblewinsrv]: FAILED! => {"msg": "The task includes an option with an undefined variable. The error was: u\"hostvars['ANSIBLEWINSRV']\" is undefined\n\nThe error appears to have been in '/home/dinesh/ansiclass/Concepts/Variables/display.yml': line 61, column 7, but may\nbe elsewhere in the file depending on the exact syntax problem.\n\nThe offending line appears to be:\n\n\n    - name: get the variables from fact\n      ^ here\n"}
+2019-01-31 22:57:21,468 p=2567 u=root |  	to retry, use: --limit @/home/dinesh/ansiclass/Concepts/Variables/display.retry
+
+2019-01-31 22:57:21,469 p=2567 u=root |  PLAY RECAP *************************************************************************************************************************************************************
+2019-01-31 22:57:21,470 p=2567 u=root |  ansiblewinsrv              : ok=6    changed=0    unreachable=0    failed=1   
+2019-01-31 22:57:45,612 p=2590 u=root |  PLAY [win1 lin1] *******************************************************************************************************************************************************
+2019-01-31 22:57:45,627 p=2590 u=root |  TASK [Gathering Facts] *************************************************************************************************************************************************
+2019-01-31 22:57:45,722 urllib3.connectionpool Starting new HTTPS connection (1): ansiblewinsrv:5986
+2019-01-31 22:57:45,734 urllib3.connectionpool https://ansiblewinsrv:5986 "POST /wsman HTTP/1.1" 401 0
+2019-01-31 22:57:45,738 urllib3.connectionpool Resetting dropped connection: ansiblewinsrv
+2019-01-31 22:57:45,749 urllib3.connectionpool https://ansiblewinsrv:5986 "POST /wsman HTTP/1.1" 401 0
+2019-01-31 22:57:45,841 urllib3.connectionpool https://ansiblewinsrv:5986 "POST /wsman HTTP/1.1" 200 1636
+2019-01-31 22:57:45,857 urllib3.connectionpool https://ansiblewinsrv:5986 "POST /wsman HTTP/1.1" 200 847
+2019-01-31 22:57:46,406 urllib3.connectionpool https://ansiblewinsrv:5986 "POST /wsman HTTP/1.1" 200 753
+2019-01-31 22:57:47,086 urllib3.connectionpool https://ansiblewinsrv:5986 "POST /wsman HTTP/1.1" 200 998
+2019-01-31 22:57:51,607 urllib3.connectionpool https://ansiblewinsrv:5986 "POST /wsman HTTP/1.1" 200 7459
+2019-01-31 22:57:51,614 urllib3.connectionpool https://ansiblewinsrv:5986 "POST /wsman HTTP/1.1" 200 757
+2019-01-31 22:57:51,630 urllib3.connectionpool https://ansiblewinsrv:5986 "POST /wsman HTTP/1.1" 200 602
+2019-01-31 22:57:51,647 p=2590 u=root |  ok: [ansiblewinsrv]
+2019-01-31 22:57:51,667 p=2590 u=root |  TASK [Display Variable name] *******************************************************************************************************************************************
+2019-01-31 22:57:51,752 p=2590 u=root |  ok: [ansiblewinsrv] => {
+    "msg": "my name is  \"Dinesh Patil\" my company is \"{u'name': u'Generalmills', u'location': u'powai'}\" my company location is \"powai\"\n"
+}
+2019-01-31 22:57:51,767 p=2590 u=root |  TASK [display list items] **********************************************************************************************************************************************
+2019-01-31 22:57:51,852 p=2590 u=root |  ok: [ansiblewinsrv] => {
+    "msg": "our list is [{u'Dharmalingam Konar': {u'company': u'netmagic'}}, {u'Basantkumar Nayak': {u'company': u'capgemini'}}, {u'Prashant': {u'company': u'tcs'}}] first item in the list is {u'Dharmalingam Konar': {u'company': u'netmagic'}}\n"
+}
+2019-01-31 22:57:51,866 p=2590 u=root |  TASK [display array items] *********************************************************************************************************************************************
+2019-01-31 22:57:51,948 p=2590 u=root |  ok: [ansiblewinsrv] => {
+    "msg": "our features list is [u'Web-Server', u'Telnet-Client', u'Windows-Server-Backup'] first item in the features list is Web-Server\n"
+}
+2019-01-31 22:57:51,964 p=2590 u=root |  TASK [display variables from external files] ***************************************************************************************************************************
+2019-01-31 22:57:52,046 p=2590 u=root |  ok: [ansiblewinsrv] => {
+    "msg": "our  input from the external files -- myname is Dinesh Patil first item in the features list is [u'Bits', u'Dhcp', u'Dnscache']\n"
+}
+2019-01-31 22:57:52,062 p=2590 u=root |  TASK [take input from user] ********************************************************************************************************************************************
+2019-01-31 22:57:52,147 p=2590 u=root |  ok: [ansiblewinsrv] => {
+    "msg": "the input provided by you is dsa\u001b[A\n"
+}
+2019-01-31 22:57:52,163 p=2590 u=root |  TASK [get the variables from fact] *************************************************************************************************************************************
+2019-01-31 22:57:52,201 p=2590 u=root |  fatal: [ansiblewinsrv]: FAILED! => {"msg": "The task includes an option with an undefined variable. The error was: u\"hostvars['ANSIBLEWINSRV']\" is undefined\n\nThe error appears to have been in '/home/dinesh/ansiclass/Concepts/Variables/display.yml': line 61, column 7, but may\nbe elsewhere in the file depending on the exact syntax problem.\n\nThe offending line appears to be:\n\n\n    - name: get the variables from fact\n      ^ here\n"}
+2019-01-31 22:57:52,204 p=2590 u=root |  	to retry, use: --limit @/home/dinesh/ansiclass/Concepts/Variables/display.retry
+
+2019-01-31 22:57:52,205 p=2590 u=root |  PLAY RECAP *************************************************************************************************************************************************************
+2019-01-31 22:57:52,205 p=2590 u=root |  ansiblewinsrv              : ok=6    changed=0    unreachable=0    failed=1   
+2019-01-31 22:59:05,749 p=2613 u=root |  PLAY [win1 lin1] *******************************************************************************************************************************************************
+2019-01-31 22:59:05,765 p=2613 u=root |  TASK [Gathering Facts] *************************************************************************************************************************************************
+2019-01-31 22:59:05,859 urllib3.connectionpool Starting new HTTPS connection (1): ansiblewinsrv:5986
+2019-01-31 22:59:05,872 urllib3.connectionpool https://ansiblewinsrv:5986 "POST /wsman HTTP/1.1" 401 0
+2019-01-31 22:59:05,875 urllib3.connectionpool Resetting dropped connection: ansiblewinsrv
+2019-01-31 22:59:05,885 urllib3.connectionpool https://ansiblewinsrv:5986 "POST /wsman HTTP/1.1" 401 0
+2019-01-31 22:59:05,979 urllib3.connectionpool https://ansiblewinsrv:5986 "POST /wsman HTTP/1.1" 200 1636
+2019-01-31 22:59:05,993 urllib3.connectionpool https://ansiblewinsrv:5986 "POST /wsman HTTP/1.1" 200 847
+2019-01-31 22:59:06,553 urllib3.connectionpool https://ansiblewinsrv:5986 "POST /wsman HTTP/1.1" 200 753
+2019-01-31 22:59:07,249 urllib3.connectionpool https://ansiblewinsrv:5986 "POST /wsman HTTP/1.1" 200 998
+2019-01-31 22:59:11,966 urllib3.connectionpool https://ansiblewinsrv:5986 "POST /wsman HTTP/1.1" 200 7459
+2019-01-31 22:59:11,973 urllib3.connectionpool https://ansiblewinsrv:5986 "POST /wsman HTTP/1.1" 200 757
+2019-01-31 22:59:11,988 urllib3.connectionpool https://ansiblewinsrv:5986 "POST /wsman HTTP/1.1" 200 602
+2019-01-31 22:59:11,998 p=2613 u=root |  ok: [ansiblewinsrv]
+2019-01-31 22:59:12,016 p=2613 u=root |  TASK [Display Variable name] *******************************************************************************************************************************************
+2019-01-31 22:59:12,096 p=2613 u=root |  ok: [ansiblewinsrv] => {
+    "msg": "my name is  \"Dinesh Patil\" my company is \"{u'name': u'Generalmills', u'location': u'powai'}\" my company location is \"powai\"\n"
+}
+2019-01-31 22:59:12,110 p=2613 u=root |  TASK [display list items] **********************************************************************************************************************************************
+2019-01-31 22:59:12,194 p=2613 u=root |  ok: [ansiblewinsrv] => {
+    "msg": "our list is [{u'Dharmalingam Konar': {u'company': u'netmagic'}}, {u'Basantkumar Nayak': {u'company': u'capgemini'}}, {u'Prashant': {u'company': u'tcs'}}] first item in the list is {u'Dharmalingam Konar': {u'company': u'netmagic'}}\n"
+}
+2019-01-31 22:59:12,209 p=2613 u=root |  TASK [display array items] *********************************************************************************************************************************************
+2019-01-31 22:59:12,288 p=2613 u=root |  ok: [ansiblewinsrv] => {
+    "msg": "our features list is [u'Web-Server', u'Telnet-Client', u'Windows-Server-Backup'] first item in the features list is Web-Server\n"
+}
+2019-01-31 22:59:12,303 p=2613 u=root |  TASK [display variables from external files] ***************************************************************************************************************************
+2019-01-31 22:59:12,385 p=2613 u=root |  ok: [ansiblewinsrv] => {
+    "msg": "our  input from the external files -- myname is Dinesh Patil first item in the features list is [u'Bits', u'Dhcp', u'Dnscache']\n"
+}
+2019-01-31 22:59:12,400 p=2613 u=root |  TASK [take input from user] ********************************************************************************************************************************************
+2019-01-31 22:59:12,481 p=2613 u=root |  ok: [ansiblewinsrv] => {
+    "msg": "the input provided by you is fa\n"
+}
+2019-01-31 22:59:12,496 p=2613 u=root |  TASK [get the variables from fact] *************************************************************************************************************************************
+2019-01-31 22:59:12,599 p=2613 u=root |  ok: [ansiblewinsrv] => {
+    "msg": "The os family is Windows\n"
+}
+2019-01-31 22:59:12,603 p=2613 u=root |  PLAY RECAP *************************************************************************************************************************************************************
+2019-01-31 22:59:12,603 p=2613 u=root |  ansiblewinsrv              : ok=7    changed=0    unreachable=0    failed=0   
