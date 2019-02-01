@@ -1,7 +1,7 @@
 ---
 -
   hosts: win1 lin1
-  gather_facts: false # this will make not to gather facts before running tasks
+  gather_facts: true # this will make not to gather facts before running tasks
 
   vars:
     myname: "Dinesh Patil"
@@ -61,7 +61,7 @@
     - name: get the variables from fact
       debug:
         msg: >
-            The port used for the {{hostvars[ansible_hostname].ansible_port}}
+            The port used for the {{hostvars[ansible_hostname].ansible_os_family}}
              # you can use below msg if any of the value not found or not assigned
              # The port used for the {{hostvars[ansible_hostname].ansible_port | default('5985') }}
              
