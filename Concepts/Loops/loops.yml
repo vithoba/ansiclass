@@ -7,8 +7,8 @@
     - name: Copy Files
       win_copy:
         content: "Welcome to {{ item }} ansible\n"
-        dest: c:/test.txt
-        with_items:
+        dest: c:\temp\test.txt
+      loop:
            - dinesh
            - basant
       when: ansible_distribution == "Microsoft Windows Server Datacenter"
