@@ -12,4 +12,13 @@
            - dinesh
            - basant
       when: ansible_distribution == "Microsoft Windows Server Datacenter"
+
+      
 ...
+
+
+# use same looping to stop the BITS and dhcp service
+
+
+
+
