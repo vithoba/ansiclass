@@ -7,7 +7,24 @@
     myname: "Dinesh Patil"
     company: 
        name: "Generalmills"
-       location: "powai" 
+       location: "powai"
+    student_list:
+      - Dharmalingam Konar:
+          company: netmagic
+      - Basantkumar Nayak:
+          company: capgemini
+      - Prashant:
+          company: tcs
+    features:
+       [Web-Server, Telnet-Client, Windows-Server-Backup]
+
+  vars_files:
+    - ext_variables.yml
+
+  vars_prompt: # this will prompt for the input
+    - name: servicename
+      private: false
+
   
   tasks:
     - name: Display Variable name
@@ -16,5 +33,37 @@
               my name is  "{{myname}}"
               my company is "{{company}}"
               my company location is "{{company.location}}"
+
+    - name: display list items
+      debug:
+        msg: >
+            our list is {{student_list}}
+            first item in the list is {{student_list[0]}}
+
+
+    - name: display array items
+      debug:
+        msg: >
+            our features list is {{features}}
+            first item in the features list is {{features[0]}}
+
+    - name: display variables from external files
+      debug:
+        msg: >
+            our  input from the external files -- myname is {{myname}}
+            first item in the features list is {{servicesneedstodisable}}
+
+    - name: take input from user
+      debug:
+        msg: >
+            the input provided by you is {{servicename}}
+
+    - name: get the variables from fact
+      debug:
+        msg: >
+            The port used for the {{hostvars[ansible_hostname].ansible_port}}
+             # you can use below msg if any of the value not found or not assigned
+             # The port used for the {{hostvars[ansible_hostname].ansible_port | default('5985') }}
+             
 
 ...
