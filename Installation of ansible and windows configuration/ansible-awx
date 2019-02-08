@@ -29,3 +29,18 @@ cd awx/installer
 ansible-playbook -i inventory install.yml
 
 
+create user
+
+
+create a inventory
+
+create a host
+
+create credential
+
+setting up project
+
+create job template
+
+Launch  a job
+
