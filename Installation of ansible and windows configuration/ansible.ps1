@@ -119,7 +119,7 @@ Comment start with #
 #simple YAML
 
 ---
-
+hosts: win1
 key1: this is first value
 key2: this is second value
 
@@ -237,6 +237,14 @@ dictionary1:
  - child dictionary2
   - subchild list3
   - subchild list4
+
+class:
+ dinesh:
+  role: cosultant
+  company: CG
+ kundan:
+  role: consultant
+  company: CG
 
 Now check
 dictionary1:

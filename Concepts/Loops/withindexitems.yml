@@ -13,8 +13,6 @@
            - basant
       when: ansible_distribution == "Microsoft Windows Server Datacenter"
 
-    
-
 # you can also use
 # loop:
 #    - {name: 'Dinesh' , company: 'Generalmills'} You can call this by item.name and item.company 

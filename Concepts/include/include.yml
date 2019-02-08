@@ -4,16 +4,14 @@
   gather_facts: true # this will make not to gather facts before running tasks
 
   tasks: 
-    - name: Copy Files
-      win_copy:
-        content: "Welcome to {{ item }} ansible\n"
-        dest: c:\temp\test.txt
-      loop:
-           - dinesh
-           - basant
-      when: ansible_distribution == "Microsoft Windows Server Datacenter"
+    - name: play1 - task1
+      debug:
+           msg: play1-task1
 
+    - include_tasks: play1-task2.yml
     
+
+- import_playbook: play2.yml
 
 # you can also use
 # loop:

@@ -8,12 +8,10 @@
       win_copy:
         content: "Welcome to {{ item }} ansible\n"
         dest: c:\temp\test.txt
-      loop:
+      loop: # or you can use with_items:
            - dinesh
            - basant
       when: ansible_distribution == "Microsoft Windows Server Datacenter"
-
-    
 
 # you can also use
 # loop:
