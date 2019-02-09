@@ -5,7 +5,7 @@
 
   tasks: 
     - name: get all services
-      win_shell: get-service
+      win_shell: get-service | convertto-json
       register: services
     
     - name: list the variable
