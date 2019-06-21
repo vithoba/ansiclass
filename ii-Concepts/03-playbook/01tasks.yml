@@ -1,26 +1,25 @@
 ---
 -
+# Above - sign indicates a list item. 
  
   # Target: where our play will run and options it will run with
   hosts: mywin1
+  #gather_facts: false
 
   # Variable: variables that will apply to the play, on all target systems
-  vars:
-   sourcefile: "testvariable.txt"
+  vars: 
+
   # Task: the list of tasks that will be executed within the playbook
   tasks:
     - name: copy the files from this to remote
       win_copy:
-        src: "{{sourcefile}}"
+        src: test.txt
         dest: C:/temp.txt
-      notify: my new handler
 
   # Handlers: handlers that are executed as a notify key from a task
-  handlers:
-   - name: my new handler
-     debug:
-       msg: my files copied
+
   # Roles: list of roles to be imported into the play
 
 # Three dots indicate the end of a YAML document
+#ansible-playbook 01tasks.yml.yml
 ...

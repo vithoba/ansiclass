@@ -1,1 +1,0 @@
-ansible mywin1 -m win_copy -a "content='test' dest='C:\ansible.txt'" -i hosts.yml 
