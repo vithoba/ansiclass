@@ -3,7 +3,7 @@
 # Above - sign indicates a list item. 
  
   # Target: where our play will run and options it will run with
-  hosts: mywin1
+  hosts: wingrp
   #gather_facts: false
 
   # Variable: variables that will apply to the play, on all target systems
@@ -15,7 +15,10 @@
       win_copy:
         src: test.txt
         dest: C:/temp.txt
-
+    - name: stop a bits service 
+      win_service: 
+        name: BITS
+        state: stopped
   # Handlers: handlers that are executed as a notify key from a task
 
   # Roles: list of roles to be imported into the play

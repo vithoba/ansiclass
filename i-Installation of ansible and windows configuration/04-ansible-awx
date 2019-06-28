@@ -13,10 +13,10 @@ install docker
 apt install docker.io
 
 apt install python-pip -y
-
+pip install docker-compose
 pip install docker
 
-
+# or pip install docker-py
 apt install nodejs npm -y
 
 
@@ -27,10 +27,10 @@ git clone https://github.com/ansible/awx.git
 
 cd awx/installer
 ansible-playbook -i inventory install.yml
-
+admin
+password
 
 create user
-
 
 create a inventory
 
@@ -44,3 +44,11 @@ create job template
 
 Launch  a job
 
+
+
+Projects— it will contain ansible playbook, config, roles, templates etc and will host into a SCM project e.g. github
+Crendentials — user name/password or ssh key to connect to remote machine
+Inventories — what servers the playbook will run against and connection specific configuration
+Templates— Job template to associate all of the above and run the playbook
+
+scm credential

@@ -2,6 +2,27 @@
 
 [simplegroup]
 winsrv1
+winsrv2
+
+{
+    "simplegroup" : {
+
+                    hosts: { 
+                        "winsrv1" : {},
+                        "winsrv2"
+                    },
+                    vars:{
+                        
+
+                    }
+
+
+
+
+    }
+
+
+}
 
 [windetails]
 winsrv1 ansible_connection=winrm ansible_user=administrator ansible_password=dineshSRV@123 ansible_port=5985 ansible_winrm_server_cert_validation=ignore ansible_winrm_transport=ntlm

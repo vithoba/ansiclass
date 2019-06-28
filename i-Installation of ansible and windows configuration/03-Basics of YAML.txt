@@ -70,10 +70,10 @@ key3: 2
 # Example 6 mutiple line string
 
 ---
-statement1:false
-statement2:False
-statement3:no
-statement4:No
+statement1: false
+statement2: False
+statement3: no
+statement4: No
 statement5: FALSE
 
 ...
@@ -126,6 +126,10 @@ key2:
 - key2:
  - list item3
  - list item4
+
+company:
+ - CG
+ - Netmagic
 
 # check out the error is above
 
@@ -215,10 +219,10 @@ Our Web Server:
 
  Servers
 - WebServer:
-   WebServer
-   Telnet
-   SMTP
-   DFS
+   - WebServer
+   - Telnet
+   - SMTP
+   - DFS
 
 - DBServer:
   .net 3.5
