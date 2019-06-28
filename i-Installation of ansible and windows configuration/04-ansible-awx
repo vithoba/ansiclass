@@ -25,6 +25,11 @@ npm install npm --global
 git clone https://github.com/ansible/awx.git
 
 
+Persistent Storage
+docker volume create postgres-data
+docker volume inspect postgres-data
+Check Mount Point
+/var/lib/docker/volumes/mysql-data/_data
 cd awx/installer
 ansible-playbook -i inventory install.yml
 admin
@@ -32,11 +37,17 @@ password
 
 create user
 
+create credential
+Source Control
+machine
+
+
+
 create a inventory
 
 create a host
 
-create credential
+
 
 setting up project
 
@@ -52,3 +63,12 @@ Inventories — what servers the playbook will run against and connection specif
 Templates— Job template to associate all of the above and run the playbook
 
 scm credential
+
+
+docker logs -f awx_task
+
+docker exec -it <container name> /bin/bash
+
+docker stop $(docker ps -a -q)
+
+docker_compose_dir
