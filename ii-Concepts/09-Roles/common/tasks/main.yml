@@ -10,9 +10,9 @@
 
 - name: Stop all services
   debug:
-    msg: "We will stop the service {{ item }}"
+    msg: "{{ item }}"
   loop:
-      - "{{[services]}}"
+      - "{{services}}"
   notify: send a mail
   
     
