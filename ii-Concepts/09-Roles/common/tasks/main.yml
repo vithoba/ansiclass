@@ -11,7 +11,7 @@
 - name: Stop all services
   debug:
     msg: "We will stop the service {{ item }}"
-    loop:
+  loop:
       - "{{services}}"
   notify: send a mail
   
