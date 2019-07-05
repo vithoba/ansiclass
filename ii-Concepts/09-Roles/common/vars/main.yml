@@ -1,2 +1,5 @@
 ---
 # vars file for common
+services:
+  - BITS
+  - wuauserv

@@ -13,14 +13,11 @@
 
 - import_playbook: play2.yml
 
-# you can also use
-# loop:
-#    - {name: 'Dinesh' , company: 'Generalmills'} You can call this by item.name and item.company 
 
 ...
 
 
-# use same looping to stop the BITS and dhcp service
+
 
 
 

@@ -1,0 +1,13 @@
+---
+-
+
+
+  hosts: all
+
+  # Roles: list of roles to be imported into the play
+  roles:
+    - common
+
+
+...
+
