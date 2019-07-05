@@ -2,5 +2,5 @@
 # handlers file for common
 - name: send a mail
   debug:
-    msg: "Sedning a mail"
+    msg: "Sending a mail"
     
