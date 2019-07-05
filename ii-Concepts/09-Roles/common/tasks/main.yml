@@ -13,3 +13,4 @@
     msg: " stopping the service {{ item }}"
   loop: "{{services}}"
   notify: send_a_mail
+  tags: stop_service
