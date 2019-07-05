@@ -12,7 +12,4 @@
   debug:
     msg: " stopping the service {{ item }}"
   loop: "{{services}}"
-  notify: send a mail
-  
-    
-     
+  notify: send_a_mail

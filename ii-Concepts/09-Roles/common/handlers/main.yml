@@ -1,6 +1,6 @@
 ---
 # handlers file for common
-- name: send a mail
+- name: send_a_mail
   debug:
     msg: "Sending a mail"
     
