@@ -1,6 +1,6 @@
 ---
 -
- hosts: windows
+ hosts: all
 
  tasks:
          - name: play2 - task1
