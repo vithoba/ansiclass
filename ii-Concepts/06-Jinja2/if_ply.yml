@@ -1,6 +1,6 @@
 ---
 -
-  hosts: win1 lin1
+  hosts: all
   tasks:
     - name: test Jinja if
       debug:

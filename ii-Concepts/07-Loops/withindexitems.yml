@@ -1,6 +1,6 @@
 ---
 -
-  hosts: win1 lin1
+  hosts: all
   gather_facts: true # this will make not to gather facts before running tasks
 
   tasks: 
@@ -12,8 +12,6 @@
            - dinesh
            - basant
       when: ansible_distribution == "Microsoft Windows Server Datacenter"
-
-    
 
 # you can also use
 # loop:
