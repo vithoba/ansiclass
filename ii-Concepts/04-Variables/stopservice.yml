@@ -13,18 +13,7 @@
        state: stopped
      loop: "{{servicenames}}"
      tags: ansibleloop
-  
-   - name: stop services using Jinja2
-      {% for service in servicenames -%}
-       win_service:
-       name: {{service}}
-       state: stopped   
-      {% endfor -%}
-     tags: jinjaloop
-      
-      
-  
-    
+     
 # you can use below msg if any of the value not found or not assigned
 # The port used for the {{ansible_os_family | default('windows') }}
              
