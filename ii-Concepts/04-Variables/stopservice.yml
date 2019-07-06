@@ -1,0 +1,31 @@
+---
+-
+  hosts: all
+  gather_facts: true # this will make not to gather facts before running tasks
+
+  vars_files:
+    - ext_variables.yml
+
+  tasks:
+  - name: Stop all services
+    win_service:
+       name: "{{ item }}"
+       state: stopped
+    loop: "{{servicenames}}"
+    tags: ansibleloop
+  
+    {% for service in servicenames -%}
+  - name: stop service {{service}} using Jinja2
+    win_service:
+      name: {{service}}
+      state: stopped   
+    tags: jinjaloop
+    {% endfor -%}
+      
+  
+    
+# you can use below msg if any of the value not found or not assigned
+# The port used for the {{ansible_os_family | default('windows') }}
+             
+
+...

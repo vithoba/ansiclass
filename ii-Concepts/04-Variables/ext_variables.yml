@@ -5,4 +5,9 @@ myname: Dinesh Patil
 servicesneedstodisable:
    [Bits, Dhcp, Dnscache]
 
+servicenames:
+ - BITS
+ - dnscache
+ - dhcp
+
 ...
