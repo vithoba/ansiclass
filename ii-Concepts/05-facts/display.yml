@@ -8,6 +8,5 @@
       debug:
         msg: >
            this is for windows {{ ansible_ip_addresses }}
-      tags: 
 ...
 #this is for linux {{ ansible_default_ipv4.address}}
