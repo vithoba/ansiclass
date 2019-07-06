@@ -14,13 +14,14 @@
      loop: "{{servicenames}}"
      tags: ansibleloop
   
-     {% for service in servicenames -%}
-   - name: stop service {{service}} using Jinja2
-      win_service:
+   - name: stop services using Jinja2
+      {% for service in servicenames -%}
+       win_service:
        name: {{service}}
        state: stopped   
+      {% endfor -%}
      tags: jinjaloop
-     {% endfor -%}
+      
       
   
     
