@@ -7,20 +7,20 @@
     - ext_variables.yml
 
   tasks:
-  - name: Stop all services
-    win_service:
+   - name: Stop all services
+     win_service:
        name: "{{ item }}"
        state: stopped
-    loop: "{{servicenames}}"
-    tags: ansibleloop
+     loop: "{{servicenames}}"
+     tags: ansibleloop
   
-    {% for service in servicenames -%}
-  - name: stop service {{service}} using Jinja2
-    win_service:
-      name: {{service}}
-      state: stopped   
-    tags: jinjaloop
-    {% endfor -%}
+     {% for service in servicenames -%}
+   - name: stop service {{service}} using Jinja2
+      win_service:
+       name: {{service}}
+       state: stopped   
+     tags: jinjaloop
+     {% endfor -%}
       
   
     
