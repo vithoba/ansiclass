@@ -13,7 +13,7 @@
        state: stopped
      loop: "{{servicenames}}"
      tags: ansibleloop
-     
+
 # you can use below msg if any of the value not found or not assigned
 # The port used for the {{ansible_os_family | default('windows') }}
              
