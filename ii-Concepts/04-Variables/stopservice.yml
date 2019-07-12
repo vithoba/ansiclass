@@ -9,9 +9,9 @@
   tasks:
    - name: calling handler one time
      debug:
-     msg: calling handler
+      msg: calling handler
      notify: display-service-name
-     
+
    - name: check all services
      debug: 
       msg: > 
