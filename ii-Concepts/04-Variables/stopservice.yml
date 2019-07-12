@@ -19,7 +19,7 @@
   handlers:
    - name: display-service-name
      debug: 
-      msg: "{{servicename}}"
+      msg: "the service name passwed to handler is {{servicename}}"
 
 
 # you can use below msg if any of the value not found or not assigned
