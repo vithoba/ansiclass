@@ -7,15 +7,25 @@
     - ext_variables.yml
 
   tasks:
-   - name: Stop all services
-     win_service:
-       name: "{{ item }}"
-       state: stopped
-     loop: "{{servicenames}}"
-     tags: ansibleloop
+   - name: check all services
+     debug: 
+      msg: > 
+             {% for service in servicenames -%}
+                   service entry is {{ loop.index }} = {{ service }}
+                   {% set servicename = service %}
+             {% endfor -%} 
+     notify: display-service-name
+
+  handlers:
+   - name: display-service-name
+     debug: 
+      msg: {{servicename}}
+
 
 # you can use below msg if any of the value not found or not assigned
 # The port used for the {{ansible_os_family | default('windows') }}
+
+
              
 
 ...
