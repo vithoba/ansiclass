@@ -2,7 +2,7 @@
 -
  
   # Target: where our play will run and options it will run with
-  hosts: mywin1
+  hosts: all
 
   # Variable: variables that will apply to the play, on all target systems
   vars:
