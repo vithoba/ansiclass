@@ -11,9 +11,9 @@
 
   # Task: the list of tasks that will be executed within the playbook
   tasks:
-    - name: stop a bits service 
+    - name: stop a DNS Client service 
       win_service: 
-        name: BITS
+        name: DNS Client
         state: stopped
   # Handlers: handlers that are executed as a notify key from a task
 
