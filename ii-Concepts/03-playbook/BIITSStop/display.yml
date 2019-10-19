@@ -2,11 +2,7 @@
 -
   hosts: all
   gather_facts: true # this will make not to gather facts before running tasks
-
-  vars:
-    myname: BITS 
-      
-
+ 
   vars_files:
     - variables.yml
   
