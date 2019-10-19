@@ -1,13 +1,13 @@
 ---
 
-myname: Dinesh Patil
+myname: Services
 
 servicesneedstodisable:
-   [Bits, Dhcp, Dnscache]
+   [Bits, wuauserv, Browser]
 
 servicenames:
  - BITS
- - dnscache
- - dhcp
+ - Browser
+ - wuauserv
 
 ...
