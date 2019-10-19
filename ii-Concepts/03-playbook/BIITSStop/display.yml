@@ -13,6 +13,6 @@
   tasks:
     - name: start a BITS Client service 
       win_service: 
-        name: "{{servicesneedstodisable}}"
+        name: "{{myname}}"
         state: started
 ...
