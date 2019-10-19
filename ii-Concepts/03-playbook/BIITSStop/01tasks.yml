@@ -14,7 +14,7 @@
     - name: start a DNS Client service 
       win_service: 
         name: DNS Client
-        state: start
+        state: started
   # Handlers: handlers that are executed as a notify key from a task
 
   # Roles: list of roles to be imported into the play
