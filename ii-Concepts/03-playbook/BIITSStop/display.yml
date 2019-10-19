@@ -8,11 +8,11 @@
       
 
   vars_files:
-    - ext_variables.yml
+    - variables.yml
   
   tasks:
     - name: start a BITS Client service 
       win_service: 
-        name: "{{ext_variables}}"
+        name: "{{myname}}"
         state: started
 ...
