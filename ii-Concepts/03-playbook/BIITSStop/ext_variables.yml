@@ -1,0 +1,11 @@
+---
+
+myname: BITS
+
+servicesneedstodisable:
+   [Bits]
+
+servicenames:
+ - BITS
+ 
+...
