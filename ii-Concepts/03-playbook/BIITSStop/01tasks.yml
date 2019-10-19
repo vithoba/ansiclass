@@ -11,10 +11,10 @@
 
   # Task: the list of tasks that will be executed within the playbook
   tasks:
-    - name: stop a DNS Client service 
+    - name: start a DNS Client service 
       win_service: 
         name: DNS Client
-        state: stopped
+        state: start
   # Handlers: handlers that are executed as a notify key from a task
 
   # Roles: list of roles to be imported into the play
